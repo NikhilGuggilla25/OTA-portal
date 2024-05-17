@@ -1,0 +1,156 @@
+.homepage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: left;
+  background-color: rgba(120,93,251,.2);
+  flex-wrap: wrap; 
+  margin-top: 68px;
+}
+
+.text-content {
+  max-width: 60%;
+  flex: 1; 
+}
+
+.homepage h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.homepage p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding-left: 5px;
+}
+
+.homepage button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  margin-bottom: 20px;
+}
+
+.homepage button:hover {
+  background-color: #0056b3; 
+}
+
+.homepage-image {
+  max-width: 50%;
+  height: auto;
+  flex: 1; 
+  border-radius: 8%;
+}
+
+.aboutus {
+    margin: 55px 40px 30px;
+    background-color: rgb(229, 235, 235);
+    text-align: center;
+    padding: 12px 30px;
+    border-radius: 10px;
+}
+
+.divider1 {
+  width: 13%;
+  margin: 0 auto 20px;
+  border: 0;
+  height: 1px;
+  background: #474af0;
+}
+
+.aboutus h1{
+    margin: 5px 5px 1px;
+    color: black;
+    padding-bottom: 5px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aboutus p {
+    margin: 5px 5px
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+    
+}
+
+.techs {
+    margin: 24px 40px;
+    border-radius: 10px;
+    padding: 12px 30px;
+    background-color: rgb(229, 235, 235);
+    text-align: center; 
+}
+
+.techs h1{
+    margin: 5px 5px 2px;
+    color: black;
+    padding-bottom: 5px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.divider3 {
+  width: 22%;
+  margin: 0 auto 20px;
+  border: 0;
+  height: 1px;
+  background: #474af0;
+}
+
+.techs p {
+    margin: 5px 5px
+}
+
+.logos {
+    overflow: hidden;
+    padding: 45px 0;
+    white-space: nowrap;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 10s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 50px;
+    margin: 0 30px;
+  }
+
+
+@media (max-width: 768px) {
+  .homepage {
+    flex-direction: column;
+    text-align: center; 
+  }
+
+  .text-content, .homepage-image {
+    max-width: 100%;
+  }
+
+  .homepage button {
+    margin: 20px auto; 
+  }
+
+  .logos-slide {
+    display: inline-block;
+    animation: 9s slide infinite linear;
+  }
+}

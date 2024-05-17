@@ -1,0 +1,66 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    background-color: white; /* Set background color to white */
+    color: black; /* Set text color to black */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.companylogo {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+.nav-btns {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-btn {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.menu-icon img {
+    display: none; 
+    height: 35px;
+    width: 35px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: black; /* Set button text color to black */
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Light gray hover color */
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Media Query for Mobile Screens */
+@media screen and (max-width: 768px) {
+    .nav-btn {
+        display: none; /* Hide the navigation links for mobile screens */
+    }
+
+    .menu-icon img {
+        display: block; /* Display the menu icon for mobile screens */
+    }
+}
