@@ -23,7 +23,7 @@ const HomePage = () => {
             <div className='text-content'>
                 <h3>Empowering Tomorrow By Cultivating Innovation</h3>
                 <p>we tailor cutting-edge software solutions to your unique needs.</p>
-                <button>Let's Connect</button>
+                <button className='connect'>Let's Connect</button>
             </div>
             <img src={img2} alt="Graphic illustrating innovation" className='homepage-image' />
             </section>
@@ -51,6 +51,16 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
+
+            {/* <section className='workflow'>
+                <div className='steps'>
+                    <span className='circle'>1</span>
+                    <span className='circle'>2</span>
+                    <span className='circle'>3</span>
+                    <span className='circle'>4</span>
+                </div>
+            </section> */}
+            
         </>
     )
 }

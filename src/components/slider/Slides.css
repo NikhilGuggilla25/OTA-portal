@@ -1,0 +1,93 @@
+.sliders {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+
+.divider4 {
+  width: 15%;
+  margin: 0 auto 30px;
+  border: 0;
+  height: 1px;
+  background: #474af0;
+}
+
+.slides {
+  margin-top: 4px;
+  position: relative;
+  display: flex;
+  max-width: 75%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+  
+.slide {
+  width: 100%;
+  max-height: 50vh;
+  display: block;
+  margin: 0 auto;
+}
+
+.slide-hidden {
+  display: none;
+}
+
+.slider-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-title {
+  margin: 0 1rem;
+}
+
+
+
+.description {
+  margin-top: 1rem;
+  width: 60%;
+}
+
+  
+.arrow {
+  filter: drop-shadow(0px 0px 5px #555);
+  width: 2rem;
+  height: 2rem;
+  color: #474af0;
+  background: none;
+  border: none;
+  font-size: 2rem;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  
+  .arrow {
+      width: 1.5rem;
+      height: 1.5rem;
+  }
+
+  .service-title {
+    margin: 0 0.5rem;
+  }
+
+  
+}

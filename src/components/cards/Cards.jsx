@@ -12,40 +12,34 @@ const Cards = () => {
                 </h1>
                 <hr className="divider" />
                 <div className="row">
-                    <div className="col">
-                        <div className="card">
-                            <img src={img2} alt="Web Development Illustration" className="card-img-top" />
-                            <div className="card-body">
-                                <h3 className="card-title">Home Automation</h3>
-                                <hr className="card-divider" />
-                                <p className="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
-                                </p>
-                            </div>
+                    <div className="card">
+                        <img src={img2} alt="Web Development Illustration" className="card-img-top" />
+                        <div className="card-body">
+                            <h3 className="card-title">Home Automation</h3>
+                            <hr className="card-divider" />
+                            <p className="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                            </p>
                         </div>
                     </div>
-                    <div className="col">
-                        <div className="card">
-                            <img src={img2} alt="App Development Illustration" className="card-img-top" />
-                            <div className="card-body">
-                                <h3 className="card-title">Artscape</h3>
-                                <hr className="card-divider" />
-                                <p className="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
-                                </p>
-                            </div>
+                    <div className="card">
+                        <img src={img2} alt="App Development Illustration" className="card-img-top" />
+                        <div className="card-body">
+                            <h3 className="card-title">Artscape</h3>
+                            <hr className="card-divider" />
+                            <p className="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                            </p>
                         </div>
                     </div>
-                    <div className="col">
-                        <div className="card">
-                            <img src={img2} alt="Digital Marketing Illustration" className="card-img-top" />
-                            <div className="card-body">
-                                <h3 className="card-title">ELab Notes</h3>
-                                <hr className="card-divider" />
-                                <p className="card-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit...
-                                </p>
-                            </div>
+                    <div className="card">
+                        <img src={img2} alt="Digital Marketing Illustration" className="card-img-top" />
+                        <div className="card-body">
+                            <h3 className="card-title">ELab Notes</h3>
+                            <hr className="card-divider" />
+                            <p className="card-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit...
+                            </p>
                         </div>
                     </div>
                 </div>

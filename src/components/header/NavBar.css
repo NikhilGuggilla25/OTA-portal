@@ -36,7 +36,7 @@
     width: 35px;
 }
 
-button {
+.btn-in-nav {
     background-color: transparent;
     border: none;
     color: black; /* Set button text color to black */
