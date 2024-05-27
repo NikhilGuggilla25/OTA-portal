@@ -51,12 +51,29 @@
   border-radius: 8%;
 }
 
+@media (max-width: 768px) {
+  .homepage {
+    flex-direction: column;
+    text-align: center; 
+  }
+
+  .text-content, .homepage-image {
+    max-width: 100%;
+  }
+
+  .homepage button {
+    margin: 20px auto; 
+  }
+}
+
+/* ---------About Us--------- */
+
 .aboutus {
-    margin: 55px 40px 30px;
-    background-color: rgb(229, 235, 235);
-    text-align: center;
-    padding: 12px 30px;
-    border-radius: 10px;
+  margin: 55px 40px 30px;
+  background-color: rgb(229, 235, 235);
+  text-align: center;
+  padding: 12px 30px;
+  border-radius: 10px;
 }
 
 .divider1 {
@@ -77,98 +94,326 @@
 }
 
 .aboutus p {
-    margin: 5px 5px
+  margin: 5px 5px
 }
 
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-    
+
+/* --------- Services Slider --------- */
+
+.sliders {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 10px;
 }
 
-.techs {
-    margin: 24px 40px;
-    border-radius: 10px;
-    padding: 12px 30px;
-    background-color: rgb(229, 235, 235);
-    text-align: center; 
-}
-
-.techs h1{
-    margin: 5px 5px 2px;
-    color: black;
-    padding-bottom: 5px;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.divider3 {
-  width: 22%;
-  margin: 0 auto 20px;
+.divider4 {
+  width: 15%;
+  margin: 0 auto 30px;
   border: 0;
   height: 1px;
   background: #474af0;
 }
 
-.techs p {
-    margin: 5px 5px
+.slides {
+  margin-top: 4px;
+  position: relative;
+  display: flex;
+  max-width: 75%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
 }
-
-.logos {
-    overflow: hidden;
-    padding: 45px 0;
-    white-space: nowrap;
-}
-
-.logos-slide {
-    display: inline-block;
-    animation: 13s slide infinite linear;
-}
-
-.logos-slide img {
-    height: 50px;
-    margin: 0 30px;
-  }
-
-  /* How we work styling */
-/* .workflow {
-  max-width: 400px;
+  
+.slide {
   width: 100%;
-  background-color: grey;
+  max-height: 50vh;
+  display: block;
+  margin: 0 auto;
 }
 
-.workflow .steps{
+.slide-hidden {
+  display: none;
+}
+
+.slider-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.indicators {
+    display: flex; 
+    position: relative;
+    bottom: 1rem;
+}
+
+.indicator {
+  background-color: white;
+  height: 0.5rem;
+  width: 0.5rem;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 5px #555;
+  margin: 0 0.2rem;
+  cursor: pointer;  
+  border-radius: 50%;
+}
+
+.indicator-inactive {
+    background-color: grey;
+} 
+
+
+.slider-controls {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-} */
+}
+
+.slider-controls h1{
+  padding-top: 5px;
+}
+
+.service-title {
+  margin: 0 1rem;
+}
 
 
 
+.description {
+  margin-top: 1rem;
+  width: 60%;
+}
+
+  
+.arrow {
+  position:absolute;
+  /* filter: drop-shadow(0px 0px 5px #555); */
+  width: 2rem;
+  height: 2rem;
+  color: #474af0;
+  background: none;
+  border: none;
+  font-size: 2rem;
+}
+
+.arrow-left{
+  left: 26%;
+}
+
+.arrow-right{
+  right: 26%
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
 
 @media (max-width: 768px) {
-  .homepage {
-    flex-direction: column;
-    text-align: center; 
+  
+  .arrow {
+      display: none;
   }
 
-  .text-content, .homepage-image {
-    max-width: 100%;
+  .service-title {
+    margin: 0 0.5rem;
   }
 
-  .homepage button {
-    margin: 20px auto; 
+  .indicators{
+    top: 0.5rem;
   }
+  
+}
+
+/* ---------- workflow --------- */
+
+.workflow-sec{
+  margin: 55px 40px 30px;
+  background-color: rgb(229, 235, 235);
+  padding: 12px 0px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.workflow-sec h1{
+  margin: 5px 5px 0px;
+  color: black;
+  padding-bottom: 5px;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.divider5 {
+  width: 20%;
+  margin: 0 auto 10px;
+  border: 0;
+  height: 1px;
+  background: #474af0;
+}
+
+
+.workflow{
+  min-width: 300px;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 30px;
+  
+}
+
+.workflow h1{
+  font-size: 1.8rem;
+}
+
+.workflow p{
+  line-height: 1.5em;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 20px 40px 20px;
+  counter-increment: section;
+  position: relative;
+  color:#34435E
+}
+
+/* .workflow p h1{
+  font-size: 1.8rem;
+  color: #36374b;
+}
+
+.flow1 h1{
+  text-align: right;
+}
+
+.flow2 h1{
+  text-align: left;
+} */
+
+.workflow p:before {
+  content: counter(section);
+  position: absolute;
+  border-radius:50%;
+  padding: 10px;
+  height:1.25em;
+  width: 1.25em;
+  background-color: #474af0;
+  text-align: center;
+  line-height: 1.25em;
+  color: #ffffff;
+  font-size: 1em;
+
+}
+
+.workflow p:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+
+.workflow p:nth-child(odd):before{
+  left:100%;
+  margin-left: -20px
+}
+
+.workflow p:nth-child(even) {
+  border-left: 3px solid;
+  padding-right:0;
+}
+
+.workflow p:nth-child(even):before{
+  right:100%;
+  margin-right: -20px;
+
+}
+
+.workflow p:first-child{
+  border-top: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.workflow p:last-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .workflow{
+    min-width: 200px;
+    max-width: 350px;
+    padding: 0 20px;
+  }
+}
+
+/* ----- Techolnology Marqee effect ----- */
+
+@keyframes slide {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+  
+}
+
+.techs {
+margin: 24px 40px;
+border-radius: 10px;
+padding: 12px 30px;
+background-color: rgb(229, 235, 235);
+text-align: center; 
+}
+
+.techs h1{
+margin: 5px 5px 2px;
+color: black;
+padding-bottom: 5px;
+font-size: 2.5rem;
+font-weight: bold;
+}
+
+.divider3 {
+width: 30%;
+margin: 0 auto 20px;
+border: 0;
+height: 1px;
+background: #474af0;
+}
+
+.techs p {
+  margin: 5px 5px
+}
+
+.logos {
+  overflow: hidden;
+  padding: 45px 0;
+  white-space: nowrap;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 13s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 30px;
+}
+
+
+@media (max-width: 768px){
 
   .logos-slide {
     display: inline-block;
     animation: 13s slide infinite linear;
-  }
+  } 
+
 }

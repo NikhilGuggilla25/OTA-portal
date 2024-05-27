@@ -51,6 +51,19 @@ const Slides = () => {
                         );
                     })}   
                 </div>
+                <span className="indicators">
+                    {images.map((_, idx) => {
+                        return (
+                            <button
+                            key={idx}
+                            className={
+                                slide === idx ? "indicator" : "indicator indicator-inactive"
+                            }
+                            onClick={() => setSlide(idx)}
+                            ></button>
+                        );
+                    })}
+                </span>
                 <div className='slider-content'>
                     <div className="slider-controls">
                         <button className="arrow arrow-left" onClick={prevSlide}>❮</button>
@@ -60,6 +73,16 @@ const Slides = () => {
                     <div className="description">{description}</div>
                 </div>
             </div>
+
+
+            <section className='workflow'>
+                <h1>How we<span className="theme-text"> work</span></h1>
+                <hr className="divider5" />
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum labore culpa velit mollitia quia accusantium maiores nesciunt perspiciatis laboriosam ipsum.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ducimus amet placeat sed aspernatur nemo eligendi veniam quo doloremque explicabo?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reiciendis ipsum nesciunt, voluptatum totam illum aspernatur ipsam nihil perspiciatis voluptates!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fugiat mollitia culpa numquam earum voluptate animi. Aliquid corrupti vitae pariatur?</p>
+            </section>
             
         </>
     )
