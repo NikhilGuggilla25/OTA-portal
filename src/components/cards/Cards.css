@@ -10,7 +10,7 @@
 }
 
 .theme-text {
-  color: #474af0;
+  color: #5875eb;
 }
 
 .divider {
@@ -18,7 +18,7 @@
   margin: 0 auto 30px;
   border: 0;
   height: 1px;
-  background: #474af0;
+  background: #29abe2;
 }
 
 .row {
@@ -61,7 +61,7 @@
   margin: 10px auto;
   border: 0;
   height: 1px;
-  background: #474af0;
+  background: #29abe2;
 }
 
 .card-text {

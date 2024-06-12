@@ -28,7 +28,7 @@ const Footer = () => {
                     <li><a href="#">Independent QaaS</a></li>
                     <li><a href="#">Custom Product Development</a></li>
                     <li><a href="#">Devops Cloud Migrations</a></li>
-                    <li><a href="#">Talent Hiring</a></li>
+                    <li><a href="#">Talent OutSourcing</a></li>
                 </ul>
             </div>
             <div className="footer-col">
